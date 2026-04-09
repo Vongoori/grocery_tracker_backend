@@ -130,8 +130,8 @@ export const fetchReceiptStatus = async (id) => {
 
 
 
-export const retryReceiptProcessing = async (req) => {
-  console.log("retry receipt id: " +req.params.id);
+export const retryReceiptProcessing = async (id) => {
+  console.log("retry receipt id: " +id);
   const result = await pool.query(
     `SELECT id, image_url, status, retry_count, raw_ocr_json
      FROM receipts

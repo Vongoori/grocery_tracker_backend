@@ -10,6 +10,7 @@ import {
 export const createNewProduct = async (req, res) => {
   res.json(await createProduct(req.params.receiptId, req.body));
 };
+
 export const createProductFromBarcode = async (req, res) => {
   res.json(await createProductDirect(req.body));
 };

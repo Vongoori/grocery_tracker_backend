@@ -94,6 +94,9 @@ export const fetchReceiptDetails = async (receiptId) => {
         id,
         product_name,
         quantity,
+        product_id,
+        review_id,
+        category_id,
         price,
         category,
         created_at

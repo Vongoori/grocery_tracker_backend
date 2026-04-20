@@ -8,8 +8,8 @@ export const fetchCategories = async () => {
       id,
       name,
       parent_id
-    FROM categories WHERE parent_id IS NULL
-  `);
+    FROM categories 
+  `);///WHERE parent_id IS NULL
 
   return result.rows;
 };

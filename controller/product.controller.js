@@ -8,7 +8,8 @@ import {
 } from "../services/product.service.js";
 
 export const createNewProduct = async (req, res) => {
-  res.json(await createProduct(req.params.receiptId, req.body));
+  console.log("createNewProduct called, ", req.params.id, " body: ", req.body);
+  res.json(await createProduct(req.params.id, req.body));
 };
 
 export const createProductFromBarcode = async (req, res) => {
